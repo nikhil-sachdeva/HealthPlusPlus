@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">Vihaan</string>
+    <string name="action_settings">Settings</string>
+    <string name="finger_instructions">- Lightly place your index finger on the rear camera.\n- Make sure the camera is fully covered.\n- Measure in a shaded environment.\n- Don\'t move your finger until the measurement is complete.\n- Finally place your finger then press start.</string>
+    <string name="bp">Blood pressure (BP) is the pressure of circulating blood on the walls of blood vessels.
+        \nBlood pressure is usually expressed in terms of the systolic pressure (maximum during one heartbeat) over diastolic pressure (minimum in between two heartbeats)
+        and is measured in millimeters of mercury (mmHg), above the surrounding atmospheric pressure.
+    </string>
+
+    <string name="hr">Heart rate is the speed of the heartbeat measured by the number of contractions (beats) of the heart per minute (bpm).
+        \n\nThe American Heart Association states the normal resting adult human heart rate is 60–100 bpm.
+        \nTachycardia is a fast heart rate, defined as above 100 bpm at rest.
+        \nBradycardia is a slow heart rate, defined as below 60 bpm at rest.
+    </string>
+
+    <string name="oxy">Oxygen saturation is the fraction of [oxygen]-saturated hemoglobin relative to total hemoglobin (unsaturated + saturated) in the blood. The human body requires and regulates a very precise and specific balance of oxygen in the blood. </string>
+
+    <string name="resp">The respiratory rate is the rate at which breathing occurs. This is usually measured in breaths per minute and is set, and controlled by the respiratory centre.</string>
+    <string name="title_activity_doctor">DoctorActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="title_activity_appointment">AppointmentActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+
+
+</resources>

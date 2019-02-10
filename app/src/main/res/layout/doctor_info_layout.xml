@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp"
+    android:layout_marginTop="12dp"
+    android:layout_marginRight="12dp"
+    android:layout_marginLeft="12dp"
+    android:background="@drawable/doctor_layout_bg">
+
+
+    <ImageView
+        android:id="@+id/doctor_icon"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_width="54dp"
+        android:layout_height="54dp"
+        android:src="@drawable/ic_account_circle_24dp"/>
+
+    <TextView
+        android:id="@+id/doctorName"
+        android:layout_alignTop="@id/doctor_icon"
+        android:layout_toEndOf="@id/doctor_icon"
+        android:layout_marginStart="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:text="NAME"
+        android:textSize="20sp" />
+
+
+    <TextView
+        android:id="@+id/doctor_qual"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@id/doctorName"
+        android:layout_below="@id/doctorName"
+        android:layout_marginTop="4dp"
+        android:textSize="18sp"
+        android:text="Qualification"
+        android:textColor="@android:color/white" />
+
+    <ImageView
+        android:id="@+id/person_icon"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_below="@id/doctor_qual"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="12dp"
+        android:padding="2dp"
+        android:background="@color/maroon"
+        android:src="@drawable/ic_appointment" />
+
+    <TextView
+        android:id="@+id/appointment_fees"
+        android:layout_width="wrap_content"
+        android:layout_height="36dp"
+        android:layout_alignTop="@id/person_icon"
+        android:layout_toEndOf="@id/person_icon"
+        android:paddingStart="8dp"
+        android:paddingEnd="4dp"
+        android:textColor="@android:color/white"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:text="Rs. 200"
+        android:background="@color/maroon" />
+
+
+
+    <TextView
+        android:id="@+id/chat_fees"
+        android:layout_marginEnd="32dp"
+        android:layout_width="wrap_content"
+        android:layout_height="36dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@id/appointment_fees"
+        android:text="Rs. 25"
+        android:paddingEnd="4dp"
+        android:paddingStart="8dp"
+        android:textColor="@android:color/white"
+        android:background="@color/maroon"
+        android:textStyle="bold"
+        android:textSize="24sp" />
+
+    <ImageView
+        android:id="@+id/chat_icon"
+        android:layout_marginLeft="32dp"
+        android:background="@color/maroon"
+        android:padding="2dp"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_toStartOf="@id/chat_fees"
+        android:layout_alignTop="@id/chat_fees"
+        android:src="@drawable/ic_chat_bubble_black_24dp" />
+
+    <TextView
+        android:id="@+id/doctor_speciality"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/person_icon"
+        android:layout_marginTop="8dp"
+        android:layout_alignStart="@id/doctor_icon"
+        android:text="Speciality: Cardiovascular, General"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:layout_toStartOf="@id/doctor_location"
+        android:layout_marginEnd="16dp"
+        android:textColor="@android:color/white"/>
+
+
+    <TextView
+        android:id="@+id/doctor_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/doctor_speciality"
+        android:layout_marginTop="10dp"
+        android:layout_alignStart="@id/doctor_icon"
+        android:text="Fortis Hospital, Greater Noida, UP- 22098"
+        android:textStyle="italic"
+        android:textSize="16sp"
+        android:layout_toStartOf="@id/doctor_location"
+        android:layout_marginEnd="16dp"
+        android:textColor="@android:color/white"/>
+
+    <ImageView
+        android:id="@+id/doctor_location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_location"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@id/doctor_address"
+        android:layout_marginEnd="8dp"/>
+
+    <ImageView
+        android:id="@+id/overflow_icon"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/ic_more_vert"/>
+
+</RelativeLayout>

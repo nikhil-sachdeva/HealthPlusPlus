@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TakeAppointmentForm">
+
+    <TextView
+        android:id="@+id/head"
+        style="@style/Base.TextAppearance.AppCompat.Headline"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10dp"
+        android:text="Appointment Form"
+        android:textSize="30sp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/head"
+        android:layout_marginTop="19dp">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/details"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <TextView
+                    android:id="@+id/name"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="Name"
+                    android:textSize="17sp" />
+
+                <TextView
+                    android:id="@+id/Age"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="Age"
+                    android:textSize="17sp" />
+
+                <TextView
+                    android:id="@+id/Gender"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="Gender"
+                    android:textSize="17sp" />
+
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/problem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/details"
+
+                android:layout_margin="10dp"
+                android:text="Enter your Problem"
+                android:textSize="17sp" />
+
+            <EditText
+                android:id="@+id/et_problem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/details"
+                android:layout_marginLeft="20dp"
+
+                android:layout_toRightOf="@id/problem"
+                android:hint="problem" />
+
+
+            <LinearLayout
+                android:id="@+id/doc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_below="@id/problem"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:textSize="17sp">
+
+                <TextView
+                    android:id="@+id/doctor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:layout_below="@id/problem"
+                    android:layout_gravity="center"
+                    android:layout_margin="10dp"
+                    android:padding="5dp"
+
+                    android:text="Select Doctor"
+                    android:textSize="17sp" />
+
+
+                <TextView
+                    android:id="@+id/fees"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/problem"
+
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="60dp"
+                    android:layout_toRightOf="@id/doctor"
+                    android:gravity="center"
+                    android:text="Fees"
+                    android:textSize="17sp" />
+
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/doc"
+                android:layout_margin="10dp"
+
+                android:text="Please Pick Your Appointment Date"
+                android:textSize="17sp" />
+
+
+            <DatePicker
+                android:id="@+id/date_picker"
+                android:layout_width="wrap_content"
+                android:layout_height="400dp"
+                android:layout_below="@id/date"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp" />
+
+            <TextView
+                android:id="@+id/time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/date_picker"
+                android:layout_margin="10dp"
+                android:layout_marginTop="20dp"
+                android:text="Select your Appointment Time"
+                android:textSize="17sp" />
+
+            <TimePicker
+                android:id="@+id/time_picker"
+                android:layout_width="300dp"
+                android:layout_height="100dp"
+                android:layout_below="@id/time"
+                android:timePickerMode="spinner" />
+
+            <Button
+                android:id="@+id/submit_appointment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/time_picker"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="20dp"
+                android:background="@color/colorPrimary"
+                android:text="Submit"
+                android:textSize="17sp"
+                android:textColor="#ffffff" />
+        </RelativeLayout>
+
+
+    </ScrollView>
+
+</RelativeLayout>

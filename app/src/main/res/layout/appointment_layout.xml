@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp"
+    android:layout_marginTop="12dp"
+    android:layout_marginRight="12dp"
+    android:layout_marginLeft="12dp"
+    android:background="@drawable/doctor_layout_bg">
+
+    <TextView
+        android:id="@+id/appointment_name"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:text="Patient Name: Nikhil Sachdeva"
+        android:textSize="20sp" />
+
+
+    <TextView
+        android:id="@+id/appointment_desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@id/appointment_name"
+        android:layout_below="@id/appointment_name"
+        android:layout_marginTop="4dp"
+        android:textSize="18sp"
+        android:text="Description: Dimagi kharabi"
+        android:textColor="@android:color/white" />
+
+    <ImageView
+        android:id="@+id/clock_icon"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_below="@id/appointment_desc"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="12dp"
+        android:padding="2dp"
+        android:background="@color/maroon"
+        android:src="@drawable/ic_clock" />
+
+    <TextView
+        android:id="@+id/appointment_time"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_alignTop="@id/clock_icon"
+        android:layout_toEndOf="@id/clock_icon"
+        android:paddingStart="8dp"
+        android:paddingEnd="4dp"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:text="7:00 AM"
+        android:background="@color/maroon" />
+
+
+
+    <TextView
+        android:id="@+id/appointment_date"
+        android:layout_marginEnd="32dp"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@id/appointment_time"
+        android:text="15.02.2019"
+        android:paddingEnd="4dp"
+        android:paddingStart="8dp"
+        android:textColor="@android:color/white"
+        android:background="@color/maroon"
+        android:textStyle="bold"
+        android:textSize="20sp" />
+
+    <ImageView
+        android:id="@+id/date_icon"
+        android:layout_marginLeft="32dp"
+        android:background="@color/maroon"
+        android:padding="2dp"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_toStartOf="@id/appointment_date"
+        android:layout_alignTop="@id/appointment_date"
+        android:src="@drawable/ic_calendar" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>
